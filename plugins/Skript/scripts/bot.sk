@@ -1,0 +1,21 @@
+on skript load:
+	login to "NDg4NzE4NzM2ODc0OTMwMTg2.DngU0w.fKPz7Ax2ELxBq-CxJYidGPRFyh8" with name "PB"
+
+	
+discord command virker:
+	prefixes: $
+	trigger:
+		create embed:
+			set the title of embed to title with text "Virker"
+			set the description of embed to "Jeg virker stadig!"
+			set the colour of the embed to Green
+		send the last created embed to event-channel with event-bot
+	
+discord command hjælp:
+	prefixes: $
+	trigger:
+		create embed:
+			set the title of embed to title with text "Hjælpe Menu"
+			set the description of the embed to "Dette er en Hjælpe meny, her vil du finde alt den hjælp du behøver!"
+			set the colour of the embed to Green
+		send the last created embed to event-channel with event-bot

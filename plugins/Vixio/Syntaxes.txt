@@ -1,0 +1,181 @@
+-=Conditions=-
+	syntax: {"%bot/string% is paused [in %guild%]",%bot/string% (is|are)(n't| not) paused [in %guild%]"}
+	syntax: {"%bot/string% is playing [in %guild%]",%bot/string% (is|are)(n't| not) playing [in %guild%]"}
+	syntax: {"%members% (is|are) [<guild>] deafened",%members% (is|are)(n't| not) [<guild>] deafened"}
+	syntax: {"%emotes% (is|are) animated",%emotes% (is|are)(n't| not) animated"}
+	syntax: %member% has permission %permission%
+	syntax: {"%member% has %role%",%member% (does[n[']t]|does not) have %role%"}
+	syntax: {"%members% (is|are) [<guild>] muted",%members% (is|are)(n't| not) [<guild>] muted"}
+	syntax: {"[the] nsfw state[s] of %channelbuilders/textchannels%",%channelbuilders/textchannels%'[s] nsfw state[s]"}
+	syntax: {"(make|create) [text] channel",(make|create) voice channel"}
+	syntax: (make|create) (embed|embed %-embedbuilder%)
+-=Effects=-
+	syntax: join %voicechannel% [with %bot/string%]
+	syntax: make %bots/strings% (leave|disconnect from) (voice|vc) [in %guild%]
+	syntax: pause [the] (track|song) %bot/string% is playing [in %guild%]
+	syntax: play %strings/tracks% [in %guild%] [with %bot/string%]
+	syntax: resume [the] (track|song|music) %bot/string% (is playing|has paused) [in %guild%]
+	syntax: search (youtube|soundcloud) for %strings% [and store the results in %listvariable%]
+	syntax: skip [the] (track|song)[s] %bot/string% is playing [in %guilds%]
+	syntax: stop [the] (track|song) %bot/string% is playing [in %guild%]
+	syntax: mark %bot/string% as %gametype% [to] [with title] %string% [(and|on|with|at) url %-string%]
+	syntax: (logout [of]|shutdown) %bot/string%
+	syntax: grab [the] last %number% messages in %textchannel%
+	syntax: (retrieve|grab) pinned messages (of|in|with) %textchannel/user%
+	syntax: pin %messages% [with %bot/string%]
+	syntax: send typing in %textchannel% [with %bot/string%]
+	syntax: (login|connect) to %string% (using|with) [the] name %string%
+	syntax: (make|mark) %textchannels% [as] [<n>]sfw (with|using) %bot/string%
+	syntax: purge %messages% with %bot/string%
+	syntax: <enable|disable> t[ext ]t[o ]s[peech] for %messagebuilders%
+	syntax: <pause|resume> updates (for|to) %messages%
+	syntax: upload %string% [with (message|embed) %-message/string%] to %user/channel% [with %bot/string%]
+	syntax: {"create text[(-| )]channel [named] %string% [in %guild%] [(as|with) %bot/string%]",create voice[(-| )]channel [named] %string% [in %guild%] [(as|with) %bot/string%]"}
+	syntax: create %channelbuilder% in %guild% [(with|as) %bot/string%] [and store (it|the channel) in %-objects%]
+	syntax: create emote %string% with name %string% [in %guild%] [with %bot/string%]
+	syntax: (retrieve|grab) [the] (bans|ban list) of %guild%
+	syntax: move %member% to %voicechannel% [with %bot/string%]
+	syntax: ban %users/strings% from %guild% [(due to|with reason|because of) %-string%] [and delete %-number% days [worth] of messages] [(with|as) %bot/string%]
+	syntax: [<un>]deafen %members% [(with|using) %bot%]
+	syntax: kick %users/strings% from %guild% [(due to|with reason|because of) %-string%] [(with|as) %bot/string%]
+	syntax: [<un>]mute %members% [(with|using) %bot%]
+	syntax: unban %users/strings% from %guild% [(with|as) %bot/string%]
+	syntax: append %strings% to %messagebuilder%
+	syntax: add %emotes% to %messages% [with %bot/string%]
+	syntax: edit %messages% to (show|say) %message/string%
+	syntax: remove %emote% added by %user% from %message% [with %bot/string%]
+	syntax: reply with %messages/strings% [and store (it|the message) in %-objects%]
+	syntax: retrieve message [with id] %string% [(in|from) %channel/user%]
+	syntax: send %message/string/messagebuilder/embedbuilder% to %channels% with %bot/string% [and store (it|the message) in %-objects%]
+	syntax: delete %channel% with %bot/string%
+	syntax: delete %message% with %bot/string%
+-=Expressions=-
+	syntax: %bot/string% paused state [in %guild%]
+	syntax: queue of %bot/string% [in %guild%]
+	syntax: [the] track[s] %bot/string% is playing [in %guild%]
+	syntax: volume of %bot/string% [in %guild%]
+	syntax: {"[the] game type[s] of %bots/users/strings%",%bots/users/strings%'[s] game type[s]"}
+	syntax: {"[the] guild[s] of %bot/string%",%bot/string%'[s] guild[s]"}
+	syntax: {"[the] mutual guilds of %user% [and %bot/string%]",%user%[[']s] and %bot/string%[[']s] mutual guilds"}
+	syntax: {"[the] uptime[s] of %strings/bots%",%strings/bots%'[s] uptime[s]"}
+	syntax: [(the|a)][new] channel[(-| )builder]
+	syntax: {"[the] bitrate[s] of %channelbuilders%",%channelbuilders%'[s] bitrate[s]"}
+	syntax: {"[the] user limit[s] of %channelbuilders%",%channelbuilders%'[s] user limit[s]"}
+	syntax: {"[the] name[s] of %channelbuilders%",%channelbuilders%'[s] name[s]"}
+	syntax: {"[the] nsfw state[s] of %channelbuilders%",%channelbuilders%'[s] nsfw state[s]"}
+	syntax: {"[the] (category|parent)[s] of %channelbuilders%",%channelbuilders%'[s] (category|parent)[s]"}
+	syntax: {"[the] topic[s] of %channelbuilders%",%channelbuilders%'[s] topic[s]"}
+	syntax: [the] last[ly] [(made|created)] channel[[ ]builder]
+	syntax: {"[the] bitrate[s] of %voicechannels%",%voicechannels%'[s] bitrate[s]"}
+	syntax: {"[the] user limit[s] of %voicechannels%",%voicechannels%'[s] user limit[s]"}
+	syntax: {"[the] nsfw state[s] of %textchannels%",%textchannels%'[s] nsfw state[s]"}
+	syntax: {"[the] (category|parent)[s] of %channels%",%channels%'[s] (category|parent)[s]"}
+	syntax: [last] (grabbed|retrieved) (pins|pinned messages)
+	syntax: {"[the] position[s] of %channels%",%channels%'[s] position[s]"}
+	syntax: {"the] topic[s] of %textchannels%",%textchannels%'[s] topic[s]"}
+	syntax: [the] grabbed messages
+	syntax: [the] used alias
+	syntax: {"[the] [<usable>] aliases[s] of %discordcommands%",%discordcommands%'[s] [<usable>] aliases[s]"}
+	syntax: [][the] last arg[ument][s]
+	syntax: [the] used command
+	syntax: [all] discord commands
+	syntax: {"[the] description[s] of %discordcommands%",%discordcommands%'[s] description[s]"}
+	syntax: [the] used prefix
+	syntax: {"[the] prefixes[s] of %discordcommands%",%discordcommands%'[s] prefixes[s]"}
+	syntax: [the] command recipient
+	syntax: {"[the] usage[s] of %discordcommands%",%discordcommands%'[s] usage[s]"}
+	syntax: [(the|an|[a] new)] embed
+	syntax: {"[the] (author info|author)[s] of %embedbuilders%",%embedbuilders%'[s] (author info|author)[s]"}
+	syntax: {"[the] colo[u]r[s] of %embedbuilders%",%embedbuilders%'[s] colo[u]r[s]"}
+	syntax: {"[the] description[s] of %embedbuilders%",%embedbuilders%'[s] description[s]"}
+	syntax: {"[the] field[s] of %embedbuilders%",%embedbuilders%'[s] field[s]"}
+	syntax: {"[the] footer[s] of %embedbuilders%",%embedbuilders%'[s] footer[s]"}
+	syntax: {"[the] image[s] of %embedbuilders%",%embedbuilders%'[s] image[s]"}
+	syntax: {"[the] embed[s] of %messages%",%messages%'[s] embed[s]"}
+	syntax: {"[the] (thumbnail|icon)[s] of %embedbuilders%",%embedbuilders%'[s] (thumbnail|icon)[s]"}
+	syntax: {"[the] (timestamp|date)[s] of %embedbuilders%",%embedbuilders%'[s] (timestamp|date)[s]"}
+	syntax: {"[the] title[s] of %embedbuilders%",%embedbuilders%'[s] title[s]"}
+	syntax: {"%embedbuilder% ((with|and) [the] title %-string%|titled %-string%)",%embedbuilder% (with|and) [the] description %string%"}
+	syntax: [the] last[ly] [(made|created)] embed[[ ]builder]
+	syntax: {"[the] (url|link)[s] of %titles%",%titles%'[s] (url|link)[s]"}
+	syntax: {"[the] <width|height>[s] of %thumbnails/imageinfos%",%thumbnails/imageinfos%'[s] <width|height>[s]"}
+	syntax: {"[the] [<proxy>] url[s] of %thumbnails/imageinfos/footers/authorinfos%",%thumbnails/imageinfos/footers/authorinfos%'[s] [<proxy>] url[s]"}
+	syntax: [an] author named %string% with [([the] url %-string%|no url)[( and [the]|, )]] [(icon %-string%|no icon)]]
+	syntax: {"[(a|the)] (split|inline) field[s] [named %-string%] [with [the] value %-string%]",[(a|the)] field[s] [named %-string%] [with [the] value %-string%]"}
+	syntax: [a] footer with [the] text %string%[( and [the]|, )(icon %-string%|no icon)]
+	syntax: [a] title [with] [the] text %string%[( and [the]|, )((url|link) %-string%|no (url|link))]
+	syntax: [java[ ]]colo[u]r from rgb %number%(, | and )%number%(, | and )%number%
+	syntax: (emoji|emote|reaction)[s] %strings% [(from|in) %-guild%]
+	syntax: {"[the] guild[s] of %channel/voicechannel/message/emote/category/role/member%",%channel/voicechannel/message/emote/category/role/member%'[s] guild[s]"}
+	syntax: {"[the] id[s] of %channel/guild/bot/user/message/role/avatar/category/member/emote%",%channel/guild/bot/user/message/role/avatar/category/member/emote%'[s] id[s]"}
+	syntax: [the] last vixio error
+	syntax: {"[the] mention tag[s] of %users/channel/members/emotes/roles%",%users/channel/members/emotes/roles%'[s] mention tag[s]"}
+	syntax: {"[the] name[s] of %channel/guild/bot/user/role/track/category/emote/field%",%channel/guild/bot/user/role/track/category/emote/field%'[s] name[s]"}
+	syntax: {"[the] prev[ious] nick[name]",[the] new nick[name]"}
+	syntax: {"[the] nickname[s] of %members%",%members%'[s] nickname[s]"}
+	syntax: [the] [last] search results
+	syntax: {"[the] categories[s] of %guilds%",%guilds%'[s] categories[s]"}
+	syntax: category named %string% [in %guild%]
+	syntax: {"[the] owner[s] of %guilds%",%guilds%'[s] owner[s]"}
+	syntax: {"[the] afk channel[s] of %guilds%",%guilds%'[s] afk channel[s]"}
+	syntax: [last] (grabbed|retrieved) bans
+	syntax: {"[the] channel[s] of %guild/category%",%guild/category%'[s] channel[s]"}
+	syntax: {"[the] [<global>] emote[s] of %guild%",%guild%'[s] [<global>] emote[s]"}
+	syntax: {"[the] icon[s] of %guilds%",%guilds%'[s] icon[s]"}
+	syntax: {"[the] members[s] of %guild/category%",%guild/category%'[s] members[s]"}
+	syntax: {"[the] region[s] of %guilds%",%guilds%'[s] region[s]"}
+	syntax: role[s] named %string% [in %guild%]
+	syntax: {"[the] text(-| )channel[s] of %guild/category%",%guild/category%'[s] text(-| )channel[s]"}
+	syntax: {"[the] voice(-| )channel[s] of %guild/category%",%guild/category%'[s] voice(-| )channel[s]"}
+	syntax: {"[the] colo[u]r[s] of %roles%",%roles%'[s] colo[u]r[s]"}
+	syntax: {"[the] [<guild>] deafen[ed] state[s] of %members%",%members%'[s] [<guild>] deafen[ed] state[s]"}
+	syntax: {"[the] [<discord>] join date[s] of %members/users%",%members/users%'[s] [<discord>] join date[s]"}
+	syntax: {"[the] [online][(-| )]status[s] of %members/users/bots/strings%",%members/users/bots/strings%'[s] [online][(-| )]status[s]"}
+	syntax: {"[the] role[s] of %members%",%members%'[s] role[s]"}
+	syntax: {"[the] voice[(-| )] channel[s] of %members%",%members%'[s] voice[(-| )] channel[s]"}
+	syntax: {"[the] embed[s] of %messagebuilders%",%messagebuilders%'[s] embed[s]"}
+	syntax: {"[the] [<stripped>] text[s] of %messagebuilders%",%messagebuilders%'[s] [<stripped>] text[s]"}
+	syntax: a [new] message builder
+	syntax: {"[the] tts state[s] of %messagebuilders%",%messagebuilders%'[s] tts state[s]"}
+	syntax: {"[the] reactions[s] of %messages%",%messages%'[s] reactions[s]"}
+	syntax: {"[the] [discord] author[s] of %messages%",%messages%'[s] [discord] author[s]"}
+	syntax: {"[the] [<stripped|display(able)?>] content[s] of %messages%",%messages%'[s] [<stripped|display(able)?>] content[s]"}
+	syntax: {"[the] date[s] of %messages%",%messages%'[s] date[s]"}
+	syntax: last retrieved [discord] message
+	syntax: {"[the] mentioned user[s] of %messages%",%messages%'[s] mentioned user[s]"}
+	syntax: channel with id %string% [in %-guild%]
+	syntax: voice(-| )channel with id %string% [in %-guild%]
+	syntax: guild[s] named %string%
+	syntax: (server|guild) with id %string%
+	syntax: %user% in %guild%
+	syntax: role with id %string% [in %guild%]
+	syntax: user with id %string%
+	syntax: {"[the] mentionable state[s] of %roles%",%roles%'[s] mentionable state[s]"}
+	syntax: {"[the] duration[s] of %tracks%",%tracks%'[s] duration[s]"}
+	syntax: {"[the] identifier[s] of %tracks%",%tracks%'[s] identifier[s]"}
+	syntax: {"[the] position[s] of %tracks%",%tracks%'[s] position[s]"}
+	syntax: {"[the] author[s] of %tracks%",%tracks%'[s] author[s]"}
+	syntax: {"[the] ur(i|l)[s] of %tracks%",%tracks%'[s] ur(i|l)[s]"}
+	syntax: {"[the] [<default>] avatar[s] of %users/bots/strings%",%users/bots/strings%'[s] [<default>] avatar[s]"}
+	syntax: {"[the] bot state[s] of %users%",%users%'[s] bot state[s]"}
+	syntax: {"[the] discriminator[s] of %users%",%users%'[s] discriminator[s]"}
+	syntax: {"[the] game[s] of %members/users/bots/strings%",%members/users/bots/strings%'[s] game[s]"}
+	syntax: ([a] new line|nl)
+	syntax: [a] zero width space
+-=Events=-
+	syntax: discord command <([^\s]+)( .+)?$>
+	syntax: track end [seen by %-string%]
+	syntax: track seek [seen by %-string%]
+	syntax: track start [seen by %-string%]
+	syntax: reaction add[ed] [seen by %-string%]
+	syntax: vixio command [%-string%]
+	syntax: (guild|server) message <receive(d)?( seen)?|sent> [by %-string%]
+	syntax: {"user join voice [seen by %-string%]",voice [channel] join [seen by %-string%]"}
+	syntax: {"user leave voice [seen by %-string%]",voice [channel] leave [seen by %-string%]"}
+	syntax: (private message|direct message) <receive(d)?( seen)?|sent> [by %-string%]
+	syntax: reaction remove[d] [seen by %-string%]
+	syntax: bot (join|enter) [new] guild [seen by %-string%]
+	syntax: (guild|member) join (guild|server) [seen by %-string%]
+	syntax: (guild|member) leave (guild|server) [seen by %-string%]
+	syntax: [member] nick[name] (change|update) [seen by %-string%]
+	syntax: message delete[d] [seen by %-string%]
